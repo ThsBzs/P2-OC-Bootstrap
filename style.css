@@ -1,0 +1,270 @@
+/*UTILISATION DE LA POLICE*/
+#titre, .nav-link{
+	font-family: 'Ubuntu', serif;
+}
+.pres, .title{
+	font-family: 'Muli', sans-serif;
+}
+#titre, .nav-link, .title{
+	text-transform: uppercase;
+}
+/*BANDEAU DE TITRE ET MENU*/
+body{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+header{
+	background-image: url(images/header2.jpg);
+	background-position: center;
+	height: 350px;
+	margin-top: 5px !important;
+
+}
+#bandeau{
+	padding-right: 0px;
+	padding-left: 0px ;
+	border-bottom: 10px solid white;
+}
+#border{
+	height: auto;
+	background-image: url(images/pellicule.jpg);
+	background-repeat: repeat-y;
+	background-size: contain;
+}
+#titre{
+	color: #697d96;
+	text-shadow: 2px 2px #697d96;
+	border: 5px solid #697d96;
+	width: auto;
+	font-size: 40px;
+	font-weight: bold;
+	margin: 100px auto 100px auto;
+	text-align: center;
+}
+#titre p{
+	margin-bottom: 0px !important;
+}
+#logo{
+	max-width: 200px;
+	max-height: 200px;
+}
+#titre2{
+	color: #697d96;
+	text-shadow: 2px 2px #697d96;
+	border: 5px solid #697d96;
+	width: auto;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	margin: 10px auto;
+}
+
+/*BORDURE BLANCHE AUTOUR DE CERTAINS ELEMENTS*/
+#titreInscription, #confirm, #confirm2, #titreProgramme, #titreActu{
+	border: 3px solid white;
+}
+
+/*MENU*/
+#myNavbar{
+	background: white !important;
+	margin-top: -10px !important;
+}
+.nav-link{
+	text-shadow: none;
+	color: #697d96 !important;
+	font-size: 18px;
+	font-weight: bold;
+	padding-right: 50px !important;
+	padding-left: 50px !important;
+}
+.nav-link:hover{
+	background-color: #697d96 !important;
+	color: white !important;
+	transition: 0.3s all;
+}
+.navbar-toggler{
+    color: #697d96 !important;
+    border-style: none;
+}
+i {
+	font-size: 40px !important;
+}
+.navbar-toggler{
+	background-color: white;
+	padding: 20px 20px;
+}
+
+/*PARTIE PRESENTATION*/
+#fondPres{
+	background-image: url(images/fond2.jpg);
+	background-position: center;
+	padding: 50px 200px;
+}
+#fondPres2 {
+	padding: 0px 5px;
+}
+#pres{
+	font-size: 20px;
+	padding: 10px;
+	text-align: center;
+	background-color: white;
+}
+#pres2{
+	font-size: 16px;
+	text-align: center;
+}
+/*TITRE DE LA PRESENTATION*/
+#title{
+	color: #697d96;
+	font-weight: bold;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+/*PROGRAMME*/
+#titreProgramme{
+	background-color: #b4becb !important;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 20px !important;
+}
+#fondProg{
+	margin-top: 10px;
+	background-color:#697d96; 	
+	background-position: center;
+	padding: 50px 200px;
+}
+#fondProg2 {
+	padding: 0px 5px;
+}
+.carousel-caption{
+	padding-bottom: 0px !important;
+}
+
+/*INSCRIPTIONS*/
+#titreInscription, #confirm, #confirm2{
+	background-color: #b4becb !important;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+#fondInsc{
+	margin-top: 10px;
+	background-color:#697d96; 	
+	background-position: center;
+	padding: 50px 200px;
+}
+#fondInsc2 {
+	padding: 0px 5px;
+}
+.form-group p, #form1{
+	font-weight: bold;
+	color: white;
+}
+#form2, #liste, #liste2, .form2{
+	font-weight: bold;
+	color: #6c757d !important;/*couleur grise plus douce*/
+}
+#liste2{
+	margin: auto !important;
+}
+#confirm2{
+	display: block;
+	margin: auto;
+	font-weight: bold;
+}
+.dropdown-menu{
+	padding: 8px 8px;
+}
+/*ACTUALITES*/
+#actu{
+	background-color:#b4becb; 	
+	background-position: center;
+	padding: 50px 100px;
+	margin-top: 10px;
+}
+#actu2{
+	margin-top: 10px;
+}
+
+#titreActu{
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	background-color: #697d96;
+}
+
+.card-title{
+	text-align: center;
+}
+.card{
+	max-width: 200px; 
+}
+h4 {
+	font-weight: bold;
+}
+
+/*FOOTER*/
+#fondFoot {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color:#b4becb; 	
+	background-position: center;
+	padding: 50px 200px;
+}
+#infos{
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	background-color: #697d96;
+	margin-top: 10px;
+}
+#btn-contact{
+	background-color: #697d96 !important; 
+	border: none !important;
+	font-weight: bold !important;
+	padding-bottom: 9px;
+
+}
+#btn-contact:hover{
+	background-color: #b4becb !important;
+}
+#contactForm{
+	color: black !important;
+	text-align: left !important;
+}
+h5{
+	color: black !important; 
+}
+#fondFoot2 {
+	margin-top: 20px;
+}
+/*CARROUSSEL*/
+#myCarousel .list-inline, #myCarousel_2 .list-inline{
+    white-space:nowrap;
+    overflow-x:auto;
+}
+
+#myCarousel .carousel-indicators {
+    position: static;
+    left: initial;
+    width: initial;
+    margin: auto;
+    padding-top: 30px;
+}
+
+
+#myCarousel .carousel-indicators > li {
+    width: initial;
+    height: initial;
+    text-indent: initial;
+}
+
+#myCarousel .carousel-indicators > li.active img {
+    opacity: 0.7;
+}
+.carousel-item{
+	text-align: center !important;
+}
+

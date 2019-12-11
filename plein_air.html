@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<title>Festival des Films de Plein Air</title>
+	
+</head>
+<body>
+	<!--bandeau incluant le menu de navigation-->
+		<div class="container-fluid" id="bandeau">
+			<div class="row">
+				<div class="col-xl-12 d-none d-lg-block">
+					<header>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-xl-8 d-none d-lg-block"  id="titre">
+									<p>Festival des Films de Plein Air</p>
+								</div>
+							</div>
+						</div>
+					</header>
+				</div>
+				<!--La même chose affichée sur petit écran-->
+				<div class="col-xl-8 d-lg-none"  id="titre2">
+					<p>Festival des Films de Plein Air</p>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-md navbar-dark sticky-top">
+			<a class="navbar-brand" href="#"></a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+				<i class="fas fa-bars fa-lg"></i>
+			</button>
+								
+			<div class="collapse navbar-collapse justify-content-center" id="myNavbar">
+				<ul class="nav nav-pills navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="#presentation">Présentation</a></li>
+					<li class="nav-item"><a class="nav-link" href="#programme">Programme</a></li>
+					<li class="nav-item"><a class="nav-link" href="#inscriptions">Inscriptions</a></li>
+					<li class="nav-item"><a class="nav-link" href="#infos">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+	<!--CORPS DE LA PAGE-->
+	<div class="container-fluid">
+		<div class="row">
+			<!--bandeau latéral, caché sur petit écran-->
+			<div class="col-lg-1 d-lg-block" id="border">
+			</div>
+			<!--contenu de la page-->
+			<div class="col-lg-10 col-md-12 col-sm-12 col-xs-12" id="contenu">
+			<!--Présentation-->
+				<section id="presentation">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xl-12 d-none d-lg-block" id="fondPres">
+								<div id="pres">
+									<h1 id="title">Le festival</h1>
+									<img id="logo" src=images/logo2.jpg> 
+									<p>Cet été, du 5 au 8 Août, le parc Monceau devient une salle de cinéma !<br>
+										<br>
+									L'association Films de Plein Air vous propose de (re)découvrir des classiques du cinéma d'auteur. <br>
+										<br>
+									Au cœur de ce théâtre de verdure, venez en famille ou entre amis profiter de projections gratuites organisées chaque soir. <br>
+										<br>
+									Installez-vous confortablement dans l'herbe, et laissez-vous emporter par Audiard, Scorsese, Gondry...
+									</p>
+								</div>
+							</div>
+							<!--La même chose sans le fond, mais n'apparaissant qu'à partir de la taille lg-->
+							<div class="col-xl-12 d-lg-none" id="fondPres2">
+								<div id="pres2">
+									<h4 id="title">Le festival</h4>
+									<img id="logo" src=images/logo2.jpg> 
+									<p>Cet été, du 5 au 8 Août, le parc Monceau devient une salle de cinéma !<br>
+										<br>
+									L'association Films de Plein Air vous propose de (re)découvrir des classiques du cinéma d'auteur. <br>
+										<br>
+									Au cœur de ce théâtre de verdure, venez en famille ou entre amis profiter de projections gratuites organisées chaque soir. <br>
+										<br>
+									Installez-vous confortablement dans l'herbe, et laissez-vous emporter par Audiard, Scorsese, Gondry...
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			<!--Programme-->
+				<section id="programme">
+					<div class="container-fluid">
+						<div class="row">
+							<!--Fenêtres modales des synopsis-->
+							<div class="modal fade" id="mod120" tabindex="-1" role="dialog" aria-labelledby="titrefenetre" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="titrefenetre">120 battements par minute</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<h4> 2017 - Robin Campillo</h4>
+											<p>Début des années 90. Alors que le sida tue depuis près de dix ans, les militants d'Act Up-Paris multiplient les actions pour lutter contre l'indifférence générale.
+											Nouveau venu dans le groupe, Nathan va être bouleversé par la radicalité de Sean.</p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal fade" id="modBuda" tabindex="-1" role="dialog" aria-labelledby="titrefenetre" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="titrefenetre">The Grand Budapest Hotel</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<h4> 2014 - Wes Anderson</h4>
+											<p>Le film retrace les aventures de Gustave H, l’homme aux clés d’or d’un célèbre hôtel européen de l’entre-deux-guerres et du garçon d’étage Zéro Moustafa, son allié le plus fidèle. La recherche d’un tableau volé, oeuvre inestimable datant de la Renaissance et un conflit autour d’un important héritage familial forment la trame de cette histoire au coeur de la vieille Europe en pleine mutation.</p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal fade" id="modCite" tabindex="-1" role="dialog" aria-labelledby="titrefenetre" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="titrefenetre">La Cité de Dieu</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<h4> 2003 - Fernando Meirelles</h4>
+												<p>Dans une favela qui a vu le jour à Rio de Janeiro dans les années soixante, Fusée est un gamin noir, pauvre, trop fragile pour devenir hors-la-loi, mais assez malin pour ne pas se contenter d'un travail sous payé. Il grandit dans un environnement violent, mais tente de voir la réalité autrement, avec l'oeil d'un artiste. Il rêve de devenir photographe professionnel.<br>
+												Petit Dé, un enfant de onze ans, emménage dans la Cité. Il souhaite pour sa part devenir le plus grand criminel de Rio et commence son apprentissage en rendant de menus services à la pègre locale. Il admire Tignasse et son gang, qui arraisonnent les camions et cambriolent à tout va. Tignasse donne à Petit Dé l'occasion de commettre un meurtre, le premier d'une longue série... </p>
+											</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal fade" id="modEter" tabindex="-1" role="dialog" aria-labelledby="titrefenetre" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="titrefenetre">Eternal Sunshine of the Spotless Mind</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<h4> 2004 - Michel Gondry</h4>
+											<p>Joel et Clementine ne voient plus que les mauvais côtés de leur tumultueuse histoire d'amour, au point que celle-ci fait effacer de sa mémoire toute trace de cette relation. Effondré, Joel contacte l'inventeur du procédé Lacuna, le Dr. Mierzwiak, pour qu'il extirpe également de sa mémoire tout ce qui le rattachait à Clementine. Deux techniciens, Stan et Patrick, s'installent à son domicile et se mettent à l'oeuvre, en présence de la secrétaire, Mary. Les souvenirs commencent à défiler dans la tête de Joel, des plus récents aux plus anciens, et s'envolent un à un, à jamais. <br>
+											Mais en remontant le fil du temps, Joel redécouvre ce qu'il aimait depuis toujours en Clementine - l'inaltérable magie d'un amour dont rien au monde ne devrait le priver. Luttant de toutes ses forces pour préserver ce trésor, il engage alors une bataille de la dernière chance contre Lacuna... </p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal fade" id="modHaine" tabindex="-1" role="dialog" aria-labelledby="titrefenetre" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="titrefenetre">La Haine</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<h4> 1995 - Mathieu Kassovitz</h4>
+											<p>Trois copains d'une banlieue ordinaire traînent leur ennui et leur jeunesse qui se perd. Ils vont vivre la journée la plus importante de leur vie après une nuit d'émeutes provoquée par le passage à tabac d'Abdel Ichah par un inspecteur de police lors d'un interrogatoire.</p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal fade" id="modListe" tabindex="-1" role="dialog" aria-labelledby="titrefenetre" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="titrefenetre">La Liste de Schindler</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<h4> 1994 - Steven Spielberg</h4>
+											<p>Evocation des années de guerre d'Oskar Schindler, fils d'industriel d'origine autrichienne rentré à Cracovie en 1939 avec les troupes allemandes. Il va, tout au long de la guerre, protéger des juifs en les faisant travailler dans sa fabrique et en 1944 sauver huit cents hommes et trois cents femmes du camp d'extermination de Auschwitz-Birkenau. </p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal fade" id="modMidnight" tabindex="-1" role="dialog" aria-labelledby="titrefenetre" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="titrefenetre">Midnight Special</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<h4> 2016 - Jeff Nichols</h4>
+											<p>Fuyant d'abord des fanatiques religieux et des forces de police, Roy, père de famille et son fils Alton, se retrouvent bientôt les proies d'une chasse à l'homme à travers tout le pays, mobilisant même les plus hautes instances du gouvernement fédéral. En fin de compte, le père risque tout pour sauver son fils et lui permettre d'accomplir son destin. Un destin qui pourrait bien changer le monde pour toujours. </p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal fade" id="modMommy" tabindex="-1" role="dialog" aria-labelledby="titrefenetre" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="titrefenetre">Mommy</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<h4> 2014 - Xavier Dolan</h4>
+											<p>Une veuve mono-parentale hérite de la garde de son fils, un adolescent TDAH impulsif et violent. Au coeur de leurs emportements et difficultés, ils tentent de joindre les deux bouts, notamment grâce à l’aide inattendue de l’énigmatique voisine d’en face, Kyla. Tous les trois, ils retrouvent une forme d’équilibre et, bientôt, d’espoir.</p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal fade" id="modOld" tabindex="-1" role="dialog" aria-labelledby="titrefenetre" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="titrefenetre">Old Boy</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<h4> 2004 - Park Chan-Wook</h4>
+											<p>A la fin des années 80, Oh Dae-Soo, père de famille sans histoire, est enlevé un jour devant chez lui. Séquestré pendant plusieurs années dans une cellule privée, son seul lien avec l'extérieur est une télévision. Par le biais de cette télévision, il apprend le meurtre de sa femme, meurtre dont il est le principal suspect. Au désespoir d'être séquestré sans raison apparente succède alors chez le héros une rage intérieure vengeresse qui lui permet de survivre. Il est relâché 15 ans plus tard, toujours sans explication. Oh Dae-Soo est alors contacté par celui qui semble être le responsable de ses malheurs, qui lui propose de découvrir qui l'a enlevé et pourquoi. Le cauchemar continue pour le héros. </p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal fade" id="modProph" tabindex="-1" role="dialog" aria-labelledby="titrefenetre" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="titrefenetre">Un Prophète</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<h4> 2009 - Jacques Audiard</h4>
+											<p>Condamné à six ans de prison, Malik El Djebena ne sait ni lire, ni écrire. A son arrivée en Centrale, seul au monde, il paraît plus jeune, plus fragile que les autres détenus. Il a 19 ans.<br>
+											D'emblée, il tombe sous la coupe d'un groupe de prisonniers corses qui fait régner sa loi dans la prison. Le jeune homme apprend vite. Au fil des " missions ", il s'endurcit et gagne la confiance des Corses.<br>
+											Mais, très vite, Malik utilise toute son intelligence pour développer discrètement son propre réseau...</p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal fade" id="modRoom" tabindex="-1" role="dialog" aria-labelledby="titrefenetre" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="titrefenetre">Room</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<h4> 2016 - Lenny Abrahamson</h4>
+											<p>Jack, 5 ans, vit seul avec sa mère, Ma. Elle lui apprend à jouer, à rire et à comprendre le monde qui l’entoure. Un monde qui commence et s’arrête aux murs de leur chambre, où ils sont retenus prisonniers, le seul endroit que Jack ait jamais connu. L’amour de Ma pour Jack la pousse à tout risquer pour offrir à son fils une chance de s’échapper et de découvrir l’extérieur, une aventure à laquelle il n’était pas préparé. </p>
+										</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							<div class="modal fade" id="modTaxi" tabindex="-1" role="dialog" aria-labelledby="titrefenetre" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="titrefenetre">Taxi Driver</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<h4> 1976 - Martin Scorsese</h4>
+											<p>Vétéran de la Guerre du Vietnam, Travis Bickle est chauffeur de taxi dans la ville de New York. Ses rencontres nocturnes et la violence quotidienne dont il est témoin lui font peu à peu perdre la tête. Il se charge bientôt de délivrer une prostituée mineure de ses souteneurs.</p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-12 d-none d-lg-block" id="fondProg">
+								<div class="col-xl-12" id="slider">
+									<h1 class="title" id="titreProgramme">Programme</h1>
+									<div id="myCarousel" class="carousel slide">
+										<div class="carousel-inner">
+											
+											<div class="active item carousel-item" data-slide-number="0">
+												<img src="images/films/1203.jpg" class="img-fluid">
+												<div class="carousel-caption">
+													<button type="button" class="btn btn-secondary" id="btn-prog" data-toggle="modal" data-target="#mod120">Synopsis</button>
+												</div>
+											</div>
+											<div class="item carousel-item" data-slide-number="1">
+												<img src="images/films/budapest3.jpg" class="img-fluid">
+												<div class="carousel-caption">
+													<button type="button" class="btn btn-secondary" id="btn-prog" data-toggle="modal" data-target="#modBuda">Synopsis</button>
+												</div>
+											</div>
+											<div class="item carousel-item" data-slide-number="2">
+												<img src="images/films/cite3.jpg" class="img-fluid">
+												<div class="carousel-caption">
+													<button type="button" class="btn btn-secondary" id="btn-prog" data-toggle="modal" data-target="#modCite">Synopsis</button>
+												</div>
+											</div>
+											<div class="item carousel-item" data-slide-number="3">
+												<img src="images/films/eternal3.jpg" class="img-fluid">
+												<div class="carousel-caption">
+													<button type="button" class="btn btn-secondary" id="btn-prog" data-toggle="modal" data-target="#modEter">Synopsis</button>
+												</div>
+											</div>
+											<div class="item carousel-item" data-slide-number="4">
+												<img src="images/films/haine3.jpg" class="img-fluid">
+												<div class="carousel-caption">
+													<button type="button" class="btn btn-secondary" id="btn-prog" data-toggle="modal" data-target="#modHaine">Synopsis</button>
+												</div>
+											</div>
+											<div class="item carousel-item" data-slide-number="5">
+												<img src="images/films/liste3.jpg" class="img-fluid">
+												<div class="carousel-caption">
+													<button type="button" class="btn btn-secondary" id="btn-prog" data-toggle="modal" data-target="#modListe">Synopsis</button>
+												</div>
+											</div>
+											<div class="item carousel-item" data-slide-number="6">
+												<img src="images/films/midnight3.jpg" class="img-fluid">
+												<div class="carousel-caption">
+													<button type="button" class="btn btn-secondary" id="btn-prog" data-toggle="modal" data-target="#modMidnight">Synopsis</button>
+												</div>
+											</div>
+											<div class="item carousel-item" data-slide-number="7">
+												<img src="images/films/mommy3.jpg" class="img-fluid">
+												<div class="carousel-caption">
+													<button type="button" class="btn btn-secondary" id="btn-prog" data-toggle="modal" data-target="#modMommy">Synopsis</button>
+												</div>
+											</div>
+											<div class="item carousel-item" data-slide-number="8">
+												<img src="images/films/old3.jpg" class="img-fluid">
+												<div class="carousel-caption">
+													<button type="button" class="btn btn-secondary" id="btn-prog" data-toggle="modal" data-target="#modOld">Synopsis</button>
+												</div>
+											</div>
+											<div class="item carousel-item" data-slide-number="9">
+												<img src="images/films/prophete3.jpg" class="img-fluid">
+												<div class="carousel-caption">
+													<button type="button" class="btn btn-secondary" id="btn-prog" data-toggle="modal" data-target="#modProph">Synopsis</button>
+												</div>
+											</div>
+											<div class="item carousel-item" data-slide-number="10">
+												<img src="images/films/room3.jpg" class="img-fluid">
+												<div class="carousel-caption">
+													<button type="button" class="btn btn-secondary" id="btn-prog" data-toggle="modal" data-target="#modRoom">Synopsis</button>
+												</div>
+											</div>
+											<div class="item carousel-item" data-slide-number="11">
+												<img src="images/films/taxi3.jpg" class="img-fluid">
+												<div class="carousel-caption">
+													<button type="button" class="btn btn-secondary" id="btn-prog" data-toggle="modal" data-target="#modTaxi">Synopsis</button>
+												</div>
+											</div>
+											<!-- Controls -->
+											<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+											<span class="carousel-control-prev-icon"></span>
+											</a>
+											<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+											<span class="carousel-control-next-icon"></span>
+											</a>
+										</div>
+										<ul class="carousel-indicators list-inline">
+											<li class="list-inline-item active">
+												<a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#myCarousel">
+													<img src="images/films/120.2.jpg" class="img-fluid">
+												</a>
+											</li>
+											<li class="list-inline-item">
+												<a id="carousel-selector-1" data-slide-to="1" data-target="#myCarousel">
+													<img src="images/films/budapest.2.jpg" class="img-fluid">
+												</a>
+											</li>
+											<li class="list-inline-item">
+												<a id="carousel-selector-2" data-slide-to="2" data-target="#myCarousel">
+													<img src="images/films/cite.2.jpg" class="img-fluid">
+												</a>
+											</li>
+											<li class="list-inline-item">
+												<a id="carousel-selector-3" data-slide-to="3" data-target="#myCarousel">
+													<img src="images/films/eternal.2.jpg" class="img-fluid">
+												</a>
+											</li>
+											<li class="list-inline-item">
+												<a id="carousel-selector-4" data-slide-to="4" data-target="#myCarousel">
+													<img src="images/films/haine.2.jpg" class="img-fluid">
+												</a>
+											</li>
+											<li class="list-inline-item">
+												<a id="carousel-selector-5" data-slide-to="5" data-target="#myCarousel">
+													<img src="images/films/liste.2.jpg" class="img-fluid">
+												</a>
+											</li>
+											<li class="list-inline-item">
+												<a id="carousel-selector-6" data-slide-to="6" data-target="#myCarousel">
+													<img src="images/films/midnight.2.jpg" class="img-fluid">
+												</a>
+											</li>
+											<li class="list-inline-item">
+												<a id="carousel-selector-7" data-slide-to="7" data-target="#myCarousel">
+													<img src="images/films/mommy.2.jpg" class="img-fluid">
+												</a>
+											</li>
+											<li class="list-inline-item">
+												<a id="carousel-selector-8" data-slide-to="8" data-target="#myCarousel">
+													<img src="images/films/old.2.jpg" class="img-fluid">
+												</a>
+											</li>
+											<li class="list-inline-item">
+												<a id="carousel-selector-9" data-slide-to="9" data-target="#myCarousel">
+													<img src="images/films/prophete.2.jpg" class="img-fluid">
+												</a>
+											</li>
+											<li class="list-inline-item">
+												<a id="carousel-selector-10" data-slide-to="10" data-target="#myCarousel">
+													<img src="images/films/room.2.jpg" class="img-fluid">
+												</a>
+											</li>
+											<li class="list-inline-item">
+												<a id="carousel-selector-11" data-slide-to="11" data-target="#myCarousel">
+													<img src="images/films/taxi.2.jpg" class="img-fluid">
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!--Programme visible sur petit écran sans fond-->
+							<div class="col-xl-12 d-lg-none" id="fondProg2">
+								<div class="col-xl-12" id="slider2">
+									<h4 class="title" id="titreProgramme">Programme</h4>
+									
+										<div id="myCarousel_2" class="carousel slide">
+											<div class="carousel-inner">
+												<div class="active item carousel-item" data-slide-number="0.2">
+													<img src="images/films/1203.jpg" class="img-fluid">
+													<div class="carousel-caption">
+														<button type="button" class="btn btn-secondary" id="btn-prog" data-toggle="modal" data-target="#mod120">Synopsis</button>
+													</div>
+												</div>
+												<div class="item carousel-item" data-slide-number="1.2">
+													<img src="images/films/budapest3.jpg" class="img-fluid">
+													<div class="carousel-caption">
+														<button type="button" class="btn btn-secondary" id="btn-prog" data-toggle="modal" data-target="#modBuda">Synopsis</button>
+													</div>
+												</div>
+												<div class="item carousel-item" data-slide-number="2.2">
+													<img src="images/films/cite3.jpg" class="img-fluid">
+													<div class="carousel-caption">
+														<button type="button" class="btn btn-secondary" id="btn-prog" data-toggle="modal" data-target="#modCite">Synopsis</button>
+													</div>
+												</div>
+												<div class="item carousel-item" data-slide-number="3.2">
+													<img src="images/films/eternal3.jpg" class="img-fluid">
+													<div class="carousel-caption">
+														<button type="button" class="btn btn-secondary" id="btn-prog" data-toggle="modal" data-target="#modEter">Synopsis</button>
+													</div>
+												</div>
+												<div class="item carousel-item" data-slide-number="4.2">
+													<img src="images/films/haine3.jpg" class="img-fluid">
+													<div class="carousel-caption">
+														<button type="button" class="btn btn-secondary" id="btn-prog" data-toggle="modal" data-target="#modHaine">Synopsis</button>
+													</div>
+												</div>
+												<div class="item carousel-item" data-slide-number="5.2">
+													<img src="images/films/liste3.jpg" class="img-fluid">
+													<div class="carousel-caption">
+														<button type="button" class="btn btn-secondary" id="btn-prog" data-toggle="modal" data-target="#modListe">Synopsis</button>
+													</div>
+												</div>
+												<div class="item carousel-item" data-slide-number="6.2">
+													<img src="images/films/midnight3.jpg" class="img-fluid">
+													<div class="carousel-caption">
+														<button type="button" class="btn btn-secondary" id="btn-prog" data-toggle="modal" data-target="#modMidnight">Synopsis</button>
+													</div>
+												</div>
+												<div class="item carousel-item" data-slide-number="7.2">
+													<img src="images/films/mommy3.jpg" class="img-fluid">
+													<div class="carousel-caption">
+														<button type="button" class="btn btn-secondary" id="btn-prog" data-toggle="modal" data-target="#modMommy">Synopsis</button>
+													</div>
+												</div>
+												<div class="item carousel-item" data-slide-number="8.2">
+													<img src="images/films/old3.jpg" class="img-fluid">
+													<div class="carousel-caption">
+														<button type="button" class="btn btn-secondary" id="btn-prog" data-toggle="modal" data-target="#modOld">Synopsis</button>
+													</div>
+												</div>
+												<div class="item carousel-item" data-slide-number="9.2">
+													<img src="images/films/prophete3.jpg" class="img-fluid">
+													<div class="carousel-caption">
+														<button type="button" class="btn btn-secondary" id="btn-prog" data-toggle="modal" data-target="#modProph">Synopsis</button>
+													</div>
+												</div>
+												<div class="item carousel-item" data-slide-number="10.2">
+													<img src="images/films/room3.jpg" class="img-fluid">
+													<div class="carousel-caption">
+														<button type="button" class="btn btn-secondary" id="btn-prog" data-toggle="modal" data-target="#modRoom">Synopsis</button>
+													</div>
+												</div>
+												<div class="item carousel-item" data-slide-number="11.2">
+													<img src="images/films/taxi3.jpg" class="img-fluid">
+													<div class="carousel-caption">
+														<button type="button" class="btn btn-secondary" id="btn-prog" data-toggle="modal" data-target="#modTaxi">Synopsis</button>
+													</div>
+												</div>
+												<!-- Controls -->
+												<a class="carousel-control-prev" href="#myCarousel_2" data-slide="prev">
+												<span class="carousel-control-prev-icon"></span>
+												</a>
+												<a class="carousel-control-next" href="#myCarousel_2" data-slide="next">
+												<span class="carousel-control-next-icon"></span>
+												</a>
+											</div>
+											<ul class="carousel-indicators list-inline">
+												<li class="list-inline-item active">
+													<a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#myCarousel_2">
+														<img src="images/films/120.2.jpg" class="img-fluid">
+													</a>
+												</li>
+												<li class="list-inline-item">
+													<a id="carousel-selector-1.2" data-slide-to="1.2" data-target="#myCarousel_2">
+														<img src="images/films/budapest.2.jpg" class="img-fluid">
+													</a>
+												</li>
+												<li class="list-inline-item">
+													<a id="carousel-selector-2.2" data-slide-to="2.2" data-target="#myCarousel_2">
+														<img src="images/films/cite.2.jpg" class="img-fluid">
+													</a>
+												</li>
+												<li class="list-inline-item">
+													<a id="carousel-selector-3.2" data-slide-to="3.2" data-target="#myCarousel_2">
+														<img src="images/films/eternal.2.jpg" class="img-fluid">
+													</a>
+												</li>
+												<li class="list-inline-item">
+													<a id="carousel-selector-4.2" data-slide-to="4.2" data-target="#myCarousel_2">
+														<img src="images/films/haine.2.jpg" class="img-fluid">
+													</a>
+												</li>
+												<li class="list-inline-item">
+													<a id="carousel-selector-5.2" data-slide-to="5.2" data-target="#myCarousel_2">
+														<img src="images/films/liste.2.jpg" class="img-fluid">
+													</a>
+												</li>
+												<li class="list-inline-item">
+													<a id="carousel-selector-6.2" data-slide-to="6.2" data-target="#myCarousel_2">
+														<img src="images/films/midnight.2.jpg" class="img-fluid">
+													</a>
+												</li>
+												<li class="list-inline-item">
+													<a id="carousel-selector-7.2" data-slide-to="7.2" data-target="#myCarousel_2">
+														<img src="images/films/mommy.2.jpg" class="img-fluid">
+													</a>
+												</li>
+												<li class="list-inline-item">
+													<a id="carousel-selector-8.2" data-slide-to="8.2" data-target="#myCarousel_2">
+														<img src="images/films/old.2.jpg" class="img-fluid">
+													</a>
+												</li>
+												<li class="list-inline-item">
+													<a id="carousel-selector-9.2" data-slide-to="9.2" data-target="#myCarousel_2">
+														<img src="images/films/prophete.2.jpg" class="img-fluid">
+													</a>
+												</li>
+												<li class="list-inline-item">
+													<a id="carousel-selector-10.2" data-slide-to="10.2" data-target="#myCarousel_2">
+														<img src="images/films/room.2.jpg" class="img-fluid">
+													</a>
+												</li>
+												<li class="list-inline-item">
+													<a id="carousel-selector-11.2" data-slide-to="11.2" data-target="#myCarousel_2">
+														<img src="images/films/taxi.2.jpg" class="img-fluid">
+													</a>
+												</li>
+											</ul>
+										</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			<!--Actualités-->
+				<section id="actualites">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xl-12 d-none d-lg-block" id="actu">
+								<h1 class="title" id="titreActu">Actualités du festival</h1>
+								<div class="container">
+									<div class="row mt-5 justify-content-center">
+										<div class="card mx-2 mb-3">
+											<img class="card-img-top" src="images/logo2.jpg" alt="Card image">
+											<h4 class="card-title">Ouverture des réservations</h4>
+											<div class="card-body">
+												<p class="card-text">Les réservations pour les projections sont ouvertes.</p>
+											</div>
+										</div>
+										<div class="card mx-2 mb-3">
+											<img class="card-img-top" src="images/logo2.jpg" alt="Card image">
+											<h4 class="card-title">Rappel des conditions d'accès</h4>
+											<div class="card-body">
+												<p class="card-text">Pour profiter au mieux du festival, consultez ici les conditions d'entrée.</p>
+											</div>
+										</div>
+										<div class="card mx-2 mb-3">
+											<img class="card-img-top" src="images/logo2.jpg" alt="Card image">
+											<h4 class="card-title">Le Festival est presque lancé !</h4>
+											<div class="card-body">
+												<p class="card-text">La date fatidique approche...</p>
+											</div>
+										</div>
+										<div class="card mx-2 mb-3">
+											<img class="card-img-top" src="images/logo2.jpg" alt="Card image">
+											<h4 class="card-title">L'équipe</h4>
+											<div class="card-body">
+												<p class="card-text">Découvrez les passionné-e-s qui organisent le festival</p>
+											</div>
+							  			</div>
+							  		</div>
+								</div>
+							</div><!--La même chose sur petit écran-->
+							<div class="col-xl-12 d-lg-none" id="actu2">
+								<h4 class="title" id="titreActu">Actualités du festival</h4>
+									<div class="container">
+									<div class="row mt-5 justify-content-center">
+										<div class="card mx-2 mb-3">
+											<img class="card-img-top" src="images/logo2.jpg" alt="Card image">
+											<h4 class="card-title">Ouverture des réservations</h4>
+											<div class="card-body">
+												<p class="card-text">Les réservations pour les projections sont ouvertes.</p>
+											</div>
+										</div>
+										<div class="card mx-2 mb-3">
+											<img class="card-img-top" src="images/logo2.jpg" alt="Card image">
+											<h4 class="card-title">Rappel des conditions d'accès</h4>
+											<div class="card-body">
+												<p class="card-text">Pour profiter au mieux du festival, consultez ici les conditions d'entrée.</p>
+											</div>
+										</div>
+										<div class="card mx-2 mb-3">
+											<img class="card-img-top" src="images/logo2.jpg" alt="Card image">
+											<h4 class="card-title">Le Festival est presque lancé !</h4>
+											<div class="card-body">
+												<p class="card-text">La date fatidique approche...</p>
+											</div>
+										</div>
+										<div class="card mx-2 mb-3">
+											<img class="card-img-top" src="images/logo2.jpg" alt="Card image">
+											<h4 class="card-title">L'équipe</h4>
+											<div class="card-body">
+												<p class="card-text">Découvrez les passionné-e-s qui organisent le festival</p>
+											</div>
+							  			</div>
+							  		</div>
+								</div>
+							</div>
+								
+							</div>
+					</div>
+				</section>
+			<!--Inscriptions-->
+				<section id="inscriptions">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xl-12 d-none d-lg-block" id="fondInsc">
+								<div class="insc">
+									<h1 class="title" id="titreInscription">Inscription à une projection</h1>
+									<div class="container">
+										<div class="row"> 
+											<div class="col-lg-6"> <!--Partie de gauche du formulaire-->
+												<form role="form">
+													<div class="form-group" id="form1">
+														<label for="mail">Adresse mail</label>
+														<input type="email" class="form-control" id="mail" placeholder="Indiquez votre adresse mail" required="true">
+														<label for="nom">Nom</label>
+														<input type="text" class="form-control" id="nom" placeholder="Indiquez votre Nom" required="true">
+														<label for="prenom">Prénom</label>
+														<input type="text" class="form-control" id="prenom" placeholder="Indiquez votre Prénom" required="true">
+													</div>
+												</form>
+											</div>
+											<div class="col-lg-6">
+												<form role="form">
+													<div class="form-group">
+														<p>Choisissez votre projection</p>
+														<select class="custom-select">
+															<option value="120">120 battements par minute - jour heure</option>
+															<option value="buda">The Grand Budapest Hotel - jour heure</option>
+															<option value="cite">La Cité de Dieu - jour heure</option>
+															<option value="eter">Eternal Sunshine of the Spotless Mind - jour heure</option>
+															<option value="haine">La Haine - jour heure</option>
+															<option value="liste">La Liste de Schindler - jour heure</option>
+															<option value="midnight">Midnight Special - jour heure</option>
+															<option value="mommy">Mommy - jour heure</option>
+															<option value="old">Old Boy - jour heure</option>
+															<option value="prophete">Un prophète - jour heure</option>
+															<option value="room">Room - jour heure</option>
+															<option value="taxi">Taxi Driver - jour heure</option>
+														</select>
+														<div class="dropdown">
+															<p>Indiquez le nombre de personnes à inscrire</p>
+															<button class="btn btn-default dropdown-toggle" type="button" id="liste" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Nombre de spectateurs<span class="caret"></span>
+															</button>
+															<ul class="dropdown-menu" aria-labelledby="liste">
+																<li>
+																<div class="custom-control custom-checkbox">
+																	<input class="custom-control-input" type="checkbox" value="" id="1">
+																	<label class="custom-control-label" for="1">1</label>																
+																</div>
+																</li>
+																<li>
+																<div class="custom-control custom-checkbox">
+																	<input class="custom-control-input" type="checkbox" value="" id="2">
+																	<label class="custom-control-label" for="2">2</label>																
+																</div>
+																</li>
+																<li>
+																<div class="custom-control custom-checkbox">
+																	<input class="custom-control-input" type="checkbox" value="" id="3">
+																	<label class="custom-control-label" for="3">3</label>																
+																</div>
+																</li>
+																<li>
+																<div class="custom-control custom-checkbox">
+																	<input class="custom-control-input" type="checkbox" value="" id="4">
+																	<label class="custom-control-label" for="4">4</label>																
+																</div>
+																</li>
+																<li>
+																<div class="custom-control custom-checkbox">
+																	<input class="custom-control-input" type="checkbox" value="" id="5">
+																	<label class="custom-control-label" for="5">5</label>																
+																</div>
+																</li>
+															</ul>	
+														</div>
+													</div> 
+													<button type="submit" class="btn btn-primary" id="confirm">Confirmer</button>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>			
+							</div>
+							<!--La même chose, mais ne affiche qu'au passage en écran plus petit-->
+							<div class="col-xl-12 d-lg-none" id="fondInsc2">
+								<div class="insc2">
+									<h4 class="title" id="titreInscription">Inscription à une projection</h4>
+									<div class="container">
+										<div class="row"> 
+											<div class="col-lg-6"> <!--Partie de gauche du formulaire-->
+												<form role="form" >
+													<div class="form-group" id="form2">
+														<label for="mail">Adresse mail</label>
+														<input type="email" class="form-control" id="mail" placeholder="Indiquez votre adresse mail" required="true">
+														<label for="nom">Nom</label>
+														<input type="text" class="form-control" id="nom" placeholder="Indiquez votre Nom" required="true">
+														<label for="prenom">Prénom</label>
+														<input type="text" class="form-control" id="prenom" placeholder="Indiquez votre Prénom" required="true">
+													</div>
+												</form>
+											</div>
+											<div class="col-lg-6">
+												<form role="form">
+													<div class="form-group" >
+														<p class="form2">Choisissez votre projection</p>
+														<select class="custom-select">
+															<option value="120">120 battements par minute - jour heure</option>
+															<option value="buda">The Grand Budapest Hotel - jour heure</option>
+															<option value="cite">La Cité de Dieu - jour heure</option>
+															<option value="eter">Eternal Sunshine of the Spotless Mind - jour heure</option>
+															<option value="haine">La Haine - jour heure</option>
+															<option value="liste">La Liste de Schindler - jour heure</option>
+															<option value="midnight">Midnight Special - jour heure</option>
+															<option value="mommy">Mommy - jour heure</option>
+															<option value="old">Old Boy - jour heure</option>
+															<option value="prophete">Un prophète - jour heure</option>
+															<option value="room">Room - jour heure</option>
+															<option value="taxi">Taxi Driver - jour heure</option>
+														</select>
+														<div class="dropdown">
+															<p class="form2">Indiquez le nombre de personnes à inscrire</p>
+															<button class="btn btn-default dropdown-toggle" type="button" id="liste2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Nombre de spectateurs<span class="caret"></span>
+															</button>
+															<ul class="dropdown-menu" aria-labelledby="liste">
+																<li>
+																<div class="custom-control custom-checkbox">
+																	<input class="custom-control-input" type="checkbox" value="" id="1">
+																	<label class="custom-control-label" for="1">1</label>																
+																</div>
+																</li>
+																<li>
+																<div class="custom-control custom-checkbox">
+																	<input class="custom-control-input" type="checkbox" value="" id="2">
+																	<label class="custom-control-label" for="2">2</label>																
+																</div>
+																</li>
+																<li>
+																<div class="custom-control custom-checkbox">
+																	<input class="custom-control-input" type="checkbox" value="" id="3">
+																	<label class="custom-control-label" for="3">3</label>																
+																</div>
+																</li>
+																<li>
+																<div class="custom-control custom-checkbox">
+																	<input class="custom-control-input" type="checkbox" value="" id="4">
+																	<label class="custom-control-label" for="4">4</label>																
+																</div>
+																</li>
+																<li>
+																<div class="custom-control custom-checkbox">
+																	<input class="custom-control-input" type="checkbox" value="" id="5">
+																	<label class="custom-control-label" for="5">5</label>																
+																</div>
+																</li>
+															</ul>	
+														</div>
+													</div>
+													<button type="submit" class="btn btn-primary" id="confirm2">Confirmer</button>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>			
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--FOOTER-->
+				<section id="footer">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xl-12 d-none d-lg-block" id="fondFoot">
+								<div id="infos">
+									<p>© Copyright Les Films de Plein Air 2019 - Réalisé par Homesailor - <button type="button" class="btn btn-primary" id="btn-contact" data-toggle="modal" data-target="#contact">Contact</button></p>
+									<!--Fenêtre modale de contact appelée par le bouton-->
+									<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="titrefenetre" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title" id="titrefenetre">Nous contacter</h5>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<div class="form-group" id="contactForm">
+														<label for="email">Adresse mail</label>
+														<input type="email" class="form-control" id="email" placeholder="Indiquez votre adresse mail" required="true">
+														<label for="message">Message</label>
+														<textarea class="form-control" id="message" rows="5" placeholder="Saisissez votre message. N'hésitez pas à laisser vos coordonnées pour que nous puissions vous répondre" required="true"></textarea>
+													</div>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-primary" data-dismiss="modal" data-target="#inscriptions">Envoyer</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--La même chose, affichée sur petit écran-->
+							<div class="col-xl-12 d-lg-none" id="fondFoot2">
+								<div id="infos">
+									<p>© Copyright Les Films de Plein Air 2019 - Réalisé par Homesailor - <button type="button" class="btn btn-primary" id="btn-contact" data-toggle="modal" data-target="#contact2">Contact</button></p>
+									<!--Fenêtre modale de contact appelée par le bouton-->
+									<div class="modal fade" id="contact2" tabindex="-1" role="dialog" aria-labelledby="titrefenetre" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title" id="titrefenetre">Nous contacter</h5>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<div class="form-group" id="contactForm">
+														<label for="email">Adresse mail</label>
+														<input type="email" class="form-control" id="email" placeholder="Indiquez votre adresse mail" required="true">
+														<label for="message">Message</label><wbr>
+														<textarea class="form-control" id="message" rows="5" placeholder="Saisissez votre message. N'hésitez pas à laisser vos coordonnées pour que nous puissions vous répondre" required="true"></textarea>
+													</div>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-primary" data-dismiss="modal" data-target="#inscriptions">Envoyer</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<!--bandeau latéral, caché sur petit écran-->
+			<div class="col-lg-1 d-lg-block" id="border">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
